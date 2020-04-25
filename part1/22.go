@@ -52,10 +52,10 @@ func enums() {
 	fmt.Println(b, kb)
 }
 
-// func main() {
-// 	//ooo()
-// 	//euler()
-// 	triangle()
-// 	consts()
-// 	enums()
-// }
+func main() {
+	//ooo()
+	//euler()
+	triangle()
+	consts()
+	enums()
+}
