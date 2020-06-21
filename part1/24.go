@@ -5,7 +5,7 @@ import (
 	// "math"
 	"math/cmplx"
 )
-func euler2(){
+func euler3(){
 	c:=3+4i;
 	fmt.Println(cmplx.Abs(c))
 }
@@ -13,5 +13,5 @@ func euler2(){
 
 
 func main () {
-	euler2()
+	euler3()
 }
