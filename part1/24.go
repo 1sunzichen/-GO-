@@ -1,8 +1,17 @@
 package main
 
+import (
+	"fmt"
+	// "math"
+	"math/cmplx"
+)
+func euler2(){
+	c:=3+4i;
+	fmt.Println(cmplx.Abs(c))
+}
 
 
-// func main () {
-// 	const filename = "abc.txt"
-// 	ioutil.ReadFile(filename)
-// }
+
+func main () {
+	euler2()
+}
