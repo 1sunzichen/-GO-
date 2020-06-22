@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"strconv"
 )
 
@@ -17,9 +17,7 @@ func convertToBin(n int) string{
 	return result;
 }
 
-for ;n>0;n/=2{
-	 
-}
+
 // func main(){
 // 	fmt.Println(
 // 		convertToBin(5),//101

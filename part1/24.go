@@ -12,6 +12,6 @@ func euler3(){
 
 
 
-func main () {
-	euler3()
-}
+// func main () {
+// 	euler3()
+// }

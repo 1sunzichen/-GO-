@@ -7,7 +7,7 @@ func grade(score int) string{
 	g:=""
 	switch{
 	case score<60:
-		g="F"
+		g="A"
 	case score<80:
 		g="C"
 	case score<90:
@@ -19,7 +19,7 @@ func grade(score int) string{
 }
 
 // func main(){
-// 	const filename="abc.txt";
+// 	const filename="part1/abc.txt";
 // 	//1
 // 	//contents,err:=ioutil.ReadFile(filename);
 // 	// if err!=nil{
@@ -33,8 +33,9 @@ func grade(score int) string{
 // 		fmt.Println("cannot print file contents:",err)
 // 	}
 
-// 	fmt.Println(
-// 		grade(89),
-// 	)
-// }
+// // 	fmt.Println(
+// // 		grade(89),
+// // 	)
+// // }
 
+// }
