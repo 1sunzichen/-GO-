@@ -1,7 +1,8 @@
 package main
+
 import (
-	"io/ioutil"
-	"fmt"
+	// "io/ioutil"
+	// "fmt"
 )
 func grade(score int) string{
 	g:=""
@@ -20,22 +21,20 @@ func grade(score int) string{
 
 // func main(){
 // 	const filename="part1/abc.txt";
-// 	//1
-// 	//contents,err:=ioutil.ReadFile(filename);
-// 	// if err!=nil{
-// 	// 	fmt.Println(err)
-// 	// }else{
-// 	// 	fmt.Printf("%s\n",contents)
-// 	// }
-// 	if contents,err:=ioutil.ReadFile(filename);err==nil{
-// 		fmt.Println(string(contents));
-// 	}else{
-// 		fmt.Println("cannot print file contents:",err)
-// 	}
+	//1
+	// contents,err:=ioutil.ReadFile(filename);
+	// if err!=nil{
+	// 	fmt.Println(err)
+	// }else{
+	// 	fmt.Printf("%s\n",contents)
+	// }
+	// if contents,err:=ioutil.ReadFile(filename);err==nil{
+	// 	fmt.Println(string(contents));
+	// }else{
+	// 	fmt.Println("cannot print file contents:",err)
+	// }
 
-// // 	fmt.Println(
-// // 		grade(89),
-// // 	)
-// // }
-
+	// fmt.Println(
+	// 	grade(89),
+	// )
 // }

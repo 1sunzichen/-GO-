@@ -44,11 +44,11 @@ func sum(numbers ...int) int{
 	}
 	return s
 }
-func main(){
-	fmt.Println(eval(3,4,"*"))
-	q,r:=div(13,3)
+// func main(){
+// 	fmt.Println(eval(3,4,"*"))
+// 	q,r:=div(13,3)
 
-	fmt.Println(q,r)
-	fmt.Println(apply(pow,3,4))
-	fmt.Println(sum(1,2,3,4))
-}
+// 	fmt.Println(q,r)
+// 	fmt.Println(apply(pow,3,4))
+// 	fmt.Println(sum(1,2,3,4))
+// }
