@@ -1,6 +1,6 @@
 package main
 import (
-	"fmt"
+	// "fmt"
 )
 // * 指針
 func swap(a,b *int){
