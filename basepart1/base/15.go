@@ -1,4 +1,4 @@
-package main
+//package main
 import (
 	"fmt"
 	"unicode/utf8"
@@ -23,7 +23,7 @@ func lengthOf15(s string) int{
 	}
 	return maxLength;
 }
-func main(){
+func main15(){
 	fmt.Println(
 		lengthOf15("asbasnbass"))
 	s:="Yes我愛93"
