@@ -21,10 +21,10 @@ func variableTypeDedu() {
 	fmt.Println(a, s, d, f)
 }
 
-// func main() {
+func main() {
 
-// 	fmt.Println("helo world")
-// 	variable()
-// 	variableInit()
-// 	variableTypeDedu()
-// }
+	fmt.Println("helo world")
+	variable()
+	variableInit()
+	variableTypeDedu()
+}
