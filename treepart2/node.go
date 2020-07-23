@@ -12,7 +12,8 @@ func CreateNode(value int) *TreeNode{
 	return &TreeNode{Value:value}
 }
 func (node TreeNode) Print(){
-	fmt.Print(node.Value)
+	fmt.Print(node.Value,"value")
+
 }
 
 // func main(){

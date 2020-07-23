@@ -36,8 +36,19 @@ func main() {
 	root.Right = &tree.TreeNode{5, nil, nil}
 	root.Right.Left = new(tree.TreeNode)
 	root.Left.Right = tree.CreateNode(2)
-	// root.Right.Left.SetValue(4)    左 右 左中 右中 上
-	aa := myTreeNode{&root}
-	aa.postOrder()
+	root.Left.Right.Left = tree.CreateNode(2)
+	root.Left.Right.Left.Right = tree.CreateNode(20)
+	root.Left.Right.Left.Right.Left = tree.CreateNode(200)
+	root.Left.Right.Left.Right.Right = tree.CreateNode(299)
+	//root.Right.Left.SetValue(4)   // 左 右 左中 右中 上
+	root.Traverse()
+
+	//aa := myTreeNode{&root}
+	//aa.postOrder()
 	// testSparse()
+	//nodeCount:=0
+	//root.Tra(func(node *tree.TreeNode) {
+	//	nodeCount++
+	//},"++")
+	//fmt.Println("Node count",nodeCount)
 }
