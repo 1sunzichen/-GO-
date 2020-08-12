@@ -1,6 +1,7 @@
 package main
 
 import (
+	"123go/functional/fib/fibonacci"
 	"bufio"
 	"fmt"
 	"os"
@@ -21,9 +22,14 @@ func writeFile(filename string){
 	}
 	defer file.Close()
 	write:=bufio.NewWriter(file)
-	f:=fib.Fib()
+	f:=fibonacci.Fibonacci()
+	for i:=0;i<20;i++{
+		fmt.Fprintln(write,f())
+	}
 
 }
 func main(){
-	tryDefer()
+	writeFile("fib.txt")
+	//tryDefer()
 }
+
