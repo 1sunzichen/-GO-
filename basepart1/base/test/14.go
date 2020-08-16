@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func lengthOf(s string) int {
 	lastOccurred := make(map[byte]int)
@@ -21,7 +24,18 @@ func lengthOf(s string) int {
 	}
 	return maxLength
 }
+func triangles(){
+	var a,b int=5,12
+	fmt.Println(calctriangle(b,a))
+
+}
+func calctriangle(a,b int) int{
+	var c int
+	c=int(math.Sqrt(float64(a*a+b*b)))
+	return c
+}
 func main() {
+	triangles()
 	fmt.Println(
 		lengthOf("asbasnbass"))
 }
