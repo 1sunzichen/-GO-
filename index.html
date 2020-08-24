@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>根据ip定位</title>
+    <style type="text/css">
+        html,body,#container{
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container" ></div>
+<div class="info" style="display: none">
+    <p id='info'></p>
+</div>
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fbd99adec7eec8c8a5085c448678dd84&plugin=AMap.Geocoder"></script>
+<script type="text/javascript" src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+<script type="text/javascript">
+    window.onload=()=>{
+
+    var map = new AMap.Map('container');
+    //获取用户所在城市信息
+    const myGeo = new AMap.Geocoder({});
+    console.log(map.getCenter().lng,map.getCenter().lat,"xxyyzz")
+    // let lnglat={};
+    // lnglat.lng=map.getCenter().lng;
+    // lnglat.lat=map.getCenter().lat;
+    //     console.log(lnglat,"lnglat")
+    myGeo.getAddress(map.getCenter(), (status,result)=>{
+        console.log(result,"result",status)
+        if (status === 'complete'&&result.regeocode) {
+            const address =result.regeocode.formattedAddress;
+            const addComp = result.regeocode.addressComponent;
+            console.log(result.regeocode,"regeocode",areadata);
+            // const tCity=addComp.city===""?(addComp.province+addComp.district):addComp.city;
+            // setFieldsValue({area:[addComp.province,tCity,addComp.district]});
+            // const provinceIdData= position.filter(item=>addComp.province.indexOf(item.shortname)!==-1)
+            // const  cityIdData=provinceIdData[0].children&&provinceIdData[0].children.filter(item=>tCity.indexOf(item.shortname)!==-1)
+            // const  districtIdData=cityIdData&&cityIdData[0].children&&cityIdData[0].children.filter(item=>addComp.district.indexOf(item.shortname)!==-1)
+            // setTimeout(()=>{
+            //     const addressIds={provinceId:provinceIdData[0].id};
+            //     if(cityIdData){
+            //         addressIds.cityId=cityIdData[0].id
+            //         if(districtIdData){
+            //             addressIds.districtId=districtIdData[0].id
+            //         }
+            //     }
+            //     setareaUpData(addressIds);
+            //     setFieldsValue({address:addComp.district?address.split(addComp.district)[1]:address});
+            // })
+        }else{
+            // message.error('根据经纬度查询地址失败')
+        }
+    });
+    }
+
+</script>
+</body>
+</html>

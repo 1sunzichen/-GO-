@@ -8,6 +8,7 @@ import (
 
 func euler() {
 	c := 5 + 12i
+	
 	fmt.Println(cmplx.Abs(c))
 	//欧拉公式
 	fmt.Println(cmplx.Exp(1i*math.Pi)+1, cmplx.Pow(math.E, 1i*math.Pi)+1)
@@ -19,7 +20,7 @@ func triangle() {
 	c = int(math.Sqrt(float64(a*a + b*b)))
 	fmt.Println(c)
 }
-
+//推断类型
 func consts() {
 	const filename = "abc.txt"
 	const a, b = 3, 4
