@@ -1,7 +1,5 @@
 package tree
 
-import "fmt"
-
 func (node *TreeNode) Traverse(){
 	//if node == nil{
 	//	return
@@ -19,7 +17,17 @@ func (node *TreeNode) Traverse(){
 	},"begin")
 
 }
+func (node *TreeNode) TraverseWithChannel() chan *TreeNode{
+	out:= make(chan *TreeNode)
+	go func(){
+		node.Tra(func(node *TreeNode){
+			out<-node// 写的操作
+		},"haode")
+		close(out)//？猜测：注释后 同时读和写
+	}()
+	return out
 
+}
 func (node *TreeNode) Tra(f func(*TreeNode),s string){
 	if node == nil{
 		return
@@ -34,9 +42,9 @@ func (node *TreeNode) Tra(f func(*TreeNode),s string){
 	//node.Right.Tra(f)
 	f(node)
 
-	node.Left.Tra(f,"left")
-	node.Right.Tra(f,"right")
-	fmt.Println(s)
+	node.Left.Tra(f,"")
+	node.Right.Tra(f,"")
+	//fmt.Print(s)//
 	//f(node)
 
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./texiao.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="show">
+    <div class="boxs1" id="boxs1">
+      <div class="box1">1</div>
+      <div class="box1">2</div>
+      <div class="box1">3</div>
+      <div class="box1">4</div>
+      <div class="box1">5</div>
+      <div class="box1">6</div>
+    </div>
+  </div>
+</body>
+<script>
+  var boxs1 = document.getElementById("boxs1");
+  boxs1.onclick = function (e) {
+    console.log(e.clientX, e.clientY);
+    boxs1.onmousemove = function (eee) {
+      boxs1.style.animation = "anim100 2s infinite";
+    }
+    boxs1.onmouseleave = function () {
+      this.onmousemove = null;
+      return false
+    }
+  }
+</script>
+
+</html>

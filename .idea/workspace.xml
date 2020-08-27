@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae5a2b10-5d1f-4fa3-9513-16109016cb68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/channel/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goroutine/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/24.go" beforeDir="false" afterPath="$PROJECT_DIR$/part1/24.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel/done/done.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/select/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/treepart2/entry/entry.go" beforeDir="false" afterPath="$PROJECT_DIR$/treepart2/entry/entry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treepart2/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/treepart2/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treepart2/node1.go" beforeDir="false" afterPath="$PROJECT_DIR$/treepart2/node1.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1gV0Lupp53uveR34JPub6h03qxz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,9 +60,38 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (2)">
+  <component name="RunManager" selected="Go Build.go build 123go/select">
+    <configuration name="go build 123go/channel/done" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GO" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/channel/done/done.go" />
+      <package value="123go/channel/done" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 123go/select" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GO" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/select/main.go" />
+      <package value="123go/select" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 123go/treepart2/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GO" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/treepart2/entry/entry.go" />
+      <package value="123go/treepart2/entry" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -71,19 +108,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GO" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/part1/basic0724/main.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 123go/select" />
+        <item itemvalue="Go Build.go build 123go/treepart2/entry" />
         <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Build.go build 123go/channel/done" />
         <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -103,22 +134,29 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1218" height="30" key="GridCell.Tab.0.bottom" timestamp="1598280355487">
-      <screen x="0" y="23" width="1280" height="733" />
+    <state width="1238" height="241" key="GridCell.Tab.0.bottom" timestamp="1598532794948">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1218" height="30" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1598280355487" />
-    <state width="1218" height="30" key="GridCell.Tab.0.center" timestamp="1598280355485">
-      <screen x="0" y="23" width="1280" height="733" />
+    <state width="1238" height="241" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1598532794948" />
+    <state width="1238" height="241" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1598497957306" />
+    <state width="1238" height="241" key="GridCell.Tab.0.center" timestamp="1598532794946">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1218" height="30" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1598280355485" />
-    <state width="1218" height="30" key="GridCell.Tab.0.left" timestamp="1598280355484">
-      <screen x="0" y="23" width="1280" height="733" />
+    <state width="1238" height="241" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1598532794946" />
+    <state width="1238" height="241" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1598497957302" />
+    <state width="1238" height="241" key="GridCell.Tab.0.left" timestamp="1598532794946">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1218" height="30" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1598280355484" />
-    <state width="1218" height="30" key="GridCell.Tab.0.right" timestamp="1598280355487">
-      <screen x="0" y="23" width="1280" height="733" />
+    <state width="1238" height="241" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1598532794946" />
+    <state width="1238" height="241" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1598497957301" />
+    <state width="1238" height="241" key="GridCell.Tab.0.right" timestamp="1598532794947">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1218" height="30" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1598280355487" />
+    <state width="1238" height="241" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1598532794947" />
+    <state width="1238" height="241" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1598497957303" />
   </component>
 </project>

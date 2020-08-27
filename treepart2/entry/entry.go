@@ -2,6 +2,7 @@ package main
 
 import (
 	tree "123go/treepart2"
+	"fmt"
 )
 
 type myTreeNode struct {
@@ -37,18 +38,33 @@ func main() {
 	root.Right.Left = new(tree.TreeNode)
 	root.Left.Right = tree.CreateNode(2)
 	root.Left.Right.Left = tree.CreateNode(2)
-	root.Left.Right.Left.Right = tree.CreateNode(20)
-	root.Left.Right.Left.Right.Left = tree.CreateNode(200)
-	root.Left.Right.Left.Right.Right = tree.CreateNode(299)
+	//root.Left.Right.Left.Right = tree.CreateNode(20)
+	//root.Left.Right.Left.Right.Left = tree.CreateNode(200)
+	//root.Left.Right.Left.Right.Right = tree.CreateNode(299)
 	//root.Right.Left.SetValue(4)   // 左 右 左中 右中 上
 	root.Traverse()
 
 	//aa := myTreeNode{&root}
 	//aa.postOrder()
 	// testSparse()
-	//nodeCount:=0
-	//root.Tra(func(node *tree.TreeNode) {
-	//	nodeCount++
-	//},"++")
-	//fmt.Println("Node count",nodeCount)
+	// 计数
+	nodeCount:=0
+	root.Tra(func(node *tree.TreeNode) {
+		nodeCount++
+	},"++")
+	fmt.Println("Node count",nodeCount)
+	//  max count
+	c:=root.TraverseWithChannel()
+
+	maxNode:=0
+	//读
+	for node:=range c{
+		if(node!=nil){
+
+			if node.Value>maxNode{
+				maxNode=node.Value
+			}
+		}
+	}
+	fmt.Println("Max node value:",maxNode)
 }
