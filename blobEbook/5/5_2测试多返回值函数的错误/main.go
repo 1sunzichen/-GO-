@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"os"
 )
 func main(){
 	orig:="ABC"
@@ -11,7 +12,7 @@ func main(){
 	an,err:=strconv.Atoi(orig)// 字符串转数字
 	if err !=nil{
 		fmt.Printf("你%s\n",orig)
-		return 
+		os.Exit(1) //如果我们想要在错误发生的同时终止程序的运行，我们可以使用 os 包的 Exit 函数：
 	}
 	fmt.Printf("The integer is %d\n",an)
 	an=an+5
