@@ -22,13 +22,30 @@ type myTime struct{
 func (t myTime) first3Chars() string{
 	return t.Time.String()[0:3]
 }
+type B struct{
+	thing int
+}
+func (b *B) change() { b.thing = 1 }
+
+func (b B) write() string { return fmt.Sprint(b) }
+
+func test1013(){
+	var b1 B // b1是值
+	b1.change()
+	fmt.Println(b1.write())
+
+	// b2 := new(B) // b2是指针
+	// b2.change()
+	// fmt.Println(b2.write())
+}
 
 func main(){
 	// v:=employee{0.5}
 	// fmt.Printf("%v\n",v.giveRaise())
-	m:=myTime{time.Now()}
-	fmt.Println("Full time now:",m.String())
-	fmt.Println("First 3  chars:",m.first3Chars())
+	// m:=myTime{time.Now()}
+	// fmt.Println("Full time now:",m.String())
+	// fmt.Println("First 3  chars:",m.first3Chars())
+	test1013()
 }
 
 
