@@ -2,6 +2,7 @@ package main
 import (
 	"fmt"
 	"time"
+	"strconv"
 )
 type employee struct{
 	salary float32
@@ -167,9 +168,31 @@ func main(){
 	// E:=new(Employee)
 	// E.SetId(8)
 	// fmt.Println(E.Id())
-	test1011();
+	// test1011();
+	test1020();
 }
 
 
+type Integer int
+type Integer1 struct {n int}
+func(p2 Integer1)get()int{
+	return p2.n
+}
+func (i *Integer) String() string {
+    return strconv.Itoa(int(*i))
+}
 
-
+func(p Integer)get()int{
+	return int(p)
+}
+func f(i int){
+	fmt.Println(i)
+}
+func test1020(){
+	var v Integer
+	v=9
+	var v2 Integer1
+	v2.n=10
+	f(int(v))
+	f(v2.n)
+}
