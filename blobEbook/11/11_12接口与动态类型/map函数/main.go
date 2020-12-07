@@ -46,7 +46,7 @@ func mapFunc(mf func(obj) obj, list []obj) []obj {
 	result := make([]obj, len(list))
 
 	for ix, v := range list {
-		fmt.Print(v,"vvvv")
+		
 		result[ix] = mf(v)
 	}
 
