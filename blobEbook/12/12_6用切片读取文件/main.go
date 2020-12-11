@@ -8,7 +8,7 @@ func cat(f *os.File){
 	const NBUF=2
 	var buf [NBUF]byte
 	//无限循环
-   
+    
 	for{
 		// fmt.Print(buf[:],"err")
 		// f.Read(buf[:]);
