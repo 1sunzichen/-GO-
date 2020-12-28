@@ -4,7 +4,7 @@ func main(){
 	// 定义自定义类型
    //1.type
 	type integer int
-	var intVariables int
+	var intVariables intgit
 	var integerVaeiables integer
 	intVariables=int(integerVaeiables)
 	//struct 组合一定数量的字段完成 值类型
