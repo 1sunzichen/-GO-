@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"net/url"
 )
@@ -31,6 +32,9 @@ func main(){
 	http.Handle("/userinfo",&define)
 	http.HandleFunc("/getbody",GetHttpBody)
 
+	http.HandleFunc("/formpost",FormPostForm)
+	//
+	http.HandleFunc("/MultipartForm",MultpartForm)
 	http.ListenAndServe(":8080",nil)
 	//url
 	//uri
@@ -41,5 +45,30 @@ func GetHttpBody(w http.ResponseWriter,r *http.Request){
 	body:=make([]byte,len)
 	r.Body.Read(body)
 	fmt.Fprintln(w,string(body))
+
+}
+/*
+	form:url query,表单
+	postform: 表单
+*/
+func FormPostForm(w http.ResponseWriter,r *http.Request){
+	r.ParseForm()
+		fmt.Fprintln(w, "r.PostForm->",r.PostForm)
+		fmt.Fprintln(w,"r.Form->",r.Form)
+}
+//
+func MultpartForm(w http.ResponseWriter,r *http.Request){
+	r.ParseMultipartForm(1024)
+	feeders :=r.MultipartForm.File["file_to_upload"][0]
+	f,err:= feeders.Open()
+	if err!=nil{
+		fmt.Fprintln(w,"fileHeader.Open()->",err.Error())
+	}else{
+		dataFormFile,err:=ioutil.ReadAll(f)
+		if err ==nil{
+			fmt.Fprintf(w,"%s\n",string(dataFormFile))
+		}
+	}
+	fmt.Fprintln(w, "r.PostForm->",r.MultipartForm)
 
 }
